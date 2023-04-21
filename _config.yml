@@ -6,9 +6,8 @@ description: A blog about lorem ipsum dolor sit amet
 
 # User settings
 username: Daksh Patel
-user_description: "I am a student at SRM Univerity pursuing Computer Science Engineering. I love to code, specifically in Python. I am also passionate about Machine Learning, would like to learn & work on projects based on Machine Learning and/or Deep Learning. Trying my best to fit in through my skills and my learnings. Always ready to face challenges....Try It!!!! 
-                        Programmer at Heart: Coding is my passion.  **CARPE DIEM**"
-user_title: Data Scientist
+user_description:
+user_title: Data Science Enthusiast
 email: iamdakshpatel@gmail.com
 twitter_username: hi5daksh
 github_username:  helloitsdaksh
