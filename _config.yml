@@ -1,0 +1,16 @@
+# Site settings
+title: A blog about lorem ipsum dolor sit amet
+description: A blog about lorem ipsum dolor sit amet
+# baseurl: "/particle" # the subpath of your site, e.g. /blog
+# url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+
+# User settings
+username: Daksh Patel
+user_description: "I am a student at SRM Univerity pursuing Computer Science Engineering. I love to code, specifically in Python. I am also passionate about Machine Learning, would like to learn & work on projects based on Machine Learning and/or Deep Learning. Trying my best to fit in through my skills and my learnings. Always ready to face challenges....Try It!!!! 
+                        Programmer at Heart: Coding is my passion.  **CARPE DIEM**"
+user_title: Data Scientist
+email: iamdakshpatel@gmail.com
+twitter_username: hi5daksh
+github_username:  helloitsdaksh
+
+exclude: ['package.json', 'src' , 'node_modules']
