@@ -3339,7 +3339,7 @@ h1,h2,h3,h4,stong{
     padding-top:1em;
     line-height:1.25;
     color:#333;
-    font-weight: bold;
+    font-weight: 500;
 }
 h1{
     font-size:2.5rem
