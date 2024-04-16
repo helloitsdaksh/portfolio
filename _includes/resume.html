@@ -1,4 +1,3 @@
-
 <style>
   body {
     font-family: Arial, sans-serif;
@@ -15,20 +14,32 @@
     background-color: #f4f4f4;
     padding: 20px;
     z-index: 999;
+    display: none; /* Initially hidden */
   }
 
   /* Sidebar links */
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .sidebar li {
+    margin-bottom: 10px;
+  }
+
   .sidebar a {
     display: block;
-    margin-bottom: 10px;
     text-decoration: none;
     color: #333;
     transition: color 0.3s;
+    padding: 5px 10px;
+    border-radius: 5px;
   }
 
   /* Active link */
   .sidebar a.active {
     color: #007bff;
+    background-color: #e9e9e9;
   }
 
   /* Content sections */
@@ -38,19 +49,23 @@
   }
 </style>
 
-<div class="sidebar">
-  <a href="#summary">Summary</a>
-  <a href="#education">Education</a>
-  <a href="#work-experience">Work Experience</a>
-  <a href="#leadership-and-involvement">Leadership and Involvement</a>
-  <a href="#publications">Publications</a>
-  <a href="#projects">Projects</a>
-  <a href="#skills-and-interests">Skills and Interests</a>
-  <a href="#achievements-and-certifications">Achievements and Certifications</a>
+<div class="sidebar" id="sidebar">
+  <ul>
+    <li><a href="#summary">Summary</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#work-experience">Work Experience</a></li>
+    <li><a href="#leadership-and-involvement">Leadership and Involvement</a></li>
+    <li><a href="#publications">Publications</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills-and-interests">Skills and Interests</a></li>
+    <li><a href="#achievements-and-certifications">Achievements and Certifications</a></li>
+  </ul>
 </div>
 
 <div class="content">
-
+<div class="user-details">
+  <h1>Resume</h1>
+</div>
 <div id="summary">
   <h2>Summary</h2>
   <p>Accomplished data scientist with a proven track record in machine learning, deep learning, and data analysis. Experienced in developing innovative solutions to complex problems across multiple domains. Seeking opportunities to leverage expertise in impactful projects within a dynamic environment.</p>
@@ -156,3 +171,24 @@
 
 </div>
 
+<!-- Other sections omitted for brevity -->
+
+</div>
+
+<script>
+// Function to toggle sidebar visibility based on scroll position
+function toggleSidebar() {
+  var sidebar = document.getElementById("sidebar");
+  var resumeSection = document.getElementById("summary");
+  var scrollPosition = window.scrollY || window.pageYOffset;
+
+  if (scrollPosition >= resumeSection.offsetTop) {
+    sidebar.style.display = "block";
+  } else {
+    sidebar.style.display = "none";
+  }
+}
+
+// Add scroll event listener to toggle sidebar visibility
+window.addEventListener("scroll", toggleSidebar);
+</script>
