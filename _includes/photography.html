@@ -1,20 +1,30 @@
 <div class="user-details">
-    <h1> My Hobby</h1>
+  <h1> My Hobby </h1>
 </div>
-<!-- First Instagram Post -->
-<div class="user-photography">
-  <div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
-
-
+<div class="user-projects">
+  <div class="images-right">
+    <img alt="coder" src="{{ "\assets\img\nn.jpg" | prepend: site.baseurl }}" />
+  </div>
+  <div class="contents">
+    <h3>Predicting Agricultural Yield by Integrating Remote Sensing Data and Machine Learning Technology</h3>
+    <ul>
+      <li>DeepLearning, Neural-Networks, Remote Sensing</li>
+    </ul>
+    <p>Developed ML model for Punjab crop yield prediction using 17 years of weather, soil, and NDVI data. Utilizing statistical methods,
+ML algorithms, and real-world validation.</p>
+<!--    <a class="project-link" href="https://doi.org/10.1007/978-981-99-1726-6_6">Check it out</a>-->
+  </div>
 </div>
-
-
-<!-- The Javascript can be moved to the end of the html page before the </body> tag -->
-<script type="text/javascript">
-/* curator-feed-default-feed-layout */
-(function(){
-var i,e,d=document,s="script";i=d.createElement("script");i.async=1;i.charset="UTF-8";
-i.src="https://cdn.curator.io/published/5639bf85-f3c6-4f9f-8976-3ce8b2fc6f9b.js";
-e=d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
-})();
-</script>
+<div class="user-projects">
+  <div class="images-left">
+    <img alt="mountains" src="{{ "\assets\img\quote.jpg" | prepend: site.baseurl }}" />
+  </div>
+  <div class="contents-right">
+    <h3> NN-from-Scratch</h3>
+    <ul>
+      <li>DeepLearning, Neural-Networks</li>
+    </ul>
+    <p>Built a Neural Network of 3 layers using NumPy and by coding all the equations from scratch. The accuracy achieved 84% on MNIST data.</p>
+    <a class="project-link" href="https://github.com/helloitsdaksh/NN-from-Scratch">Check it out</a>
+  </div>
+</div>
