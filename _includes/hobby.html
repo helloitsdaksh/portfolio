@@ -2,7 +2,7 @@
   <h1>My Hobby</h1>
 </div>
 <div class="arrow">
-    <button onclick="scrollToTop()">
+    <button onclick="scrollToTop()" id="myBtn" style="display: none;">
         <span></span>
         <span></span>
         <span></span>
@@ -78,6 +78,18 @@ function scrollToTop() {
     behavior: 'smooth'
   });
 }
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  let mybutton = document.getElementById("myBtn");
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
 </script>
 
 
@@ -106,7 +118,7 @@ function scrollToTop() {
     background: none;
     cursor: pointer;
     outline: none;
-    padding: 15px;
+    padding: 15px 20px; /* Padding from both bottom and right */
     border-radius: 4px;
 }
 
