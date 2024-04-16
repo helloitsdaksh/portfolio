@@ -3573,21 +3573,17 @@ sub,sup{
     }
     .contents-right,.images-right{
         float:right;
-        width:48%;
-        object-fit: cover;
+        width:48%
     }
     .images-right img{
-        float:right;
-        object-fit: cover;
+        float:right
     }
     .images-left{
         float:left;
-        width:48%;
-        object-fit: cover;
+        width:48%
     }
     .images-left img{
-        float:left;
-        object-fit: cover;
+        float:left
     }
 }
 .project-link{
