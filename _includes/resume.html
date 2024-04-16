@@ -160,13 +160,14 @@
 // Function to toggle sidebar visibility based on scroll position
 function toggleSidebar() {
   var sidebar = document.getElementById("sidebar");
-  var resumeSection = document.getElementById("summary");
+  var sections = document.querySelectorAll(".content > div");
+  var lastSection = sections[sections.length - 1];
   var scrollPosition = window.scrollY || window.pageYOffset;
 
-  if (scrollPosition >= resumeSection.offsetTop) {
-    sidebar.style.display = "block";
-  } else {
+  if (scrollPosition >= lastSection.offsetTop) {
     sidebar.style.display = "none";
+  } else {
+    sidebar.style.display = "block";
   }
 }
 
