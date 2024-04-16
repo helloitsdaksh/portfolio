@@ -37,6 +37,8 @@
   </div>
 </div>
 
+<button id="toTopButton" onClick="scrollToTop()">To Top</button>
+
 <script>
   // JavaScript for slider functionality
   let slideIndex1 = 0;
@@ -62,7 +64,7 @@
       setTimeout(() => showSlides(sliderId), 3000); // Change image every 3 seconds
     }
   }
-  <button id="toTopButton" onClick="scrollToTop()">To Top</button>
+
   // Function to scroll to the top of the page
   function scrollToTop() {
     window.scrollTo({
@@ -91,24 +93,6 @@
 </script>
 
 <style>
-  /* Styles for the "To Top" button */
-    #toTopButton {
-      display: none;
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #007bff;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      padding: 10px 20px;
-      cursor: pointer;
-      z-index: 1000;
-    }
-
-    #toTopButton:hover {
-      background-color: #0056b3;
-    }
   /* CSS for slider */
   .slider {
     max-width: 100%;
@@ -119,5 +103,4 @@
   .slide {
     display: none;
   }
-
 </style>
