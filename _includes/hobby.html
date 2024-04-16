@@ -1,26 +1,29 @@
 <div class="user-details">
-  <h1> My Hobby </h1>
+  <h1>My Hobby</h1>
 </div>
+
 <div class="user-projects">
-  <div class="images-right">
-    <img alt="coder" src="{{ "\assets\img\nn.jpg" | prepend: site.baseurl }}" />
+  <div id="slider1" class="slider">
+    <div class="slide"><img alt="coder" src="{{ "\assets\img\Arch.jpeg" | prepend: site.baseurl }}" /></div>
+    <div class="slide"><img alt="mountains" src="{{ "\assets\img\Cave.jpeg" | prepend: site.baseurl }}" /></div>
   </div>
   <div class="contents">
     <h3>Predicting Agricultural Yield by Integrating Remote Sensing Data and Machine Learning Technology</h3>
     <ul>
       <li>DeepLearning, Neural-Networks, Remote Sensing</li>
     </ul>
-    <p>Developed ML model for Punjab crop yield prediction using 17 years of weather, soil, and NDVI data. Utilizing statistical methods,
-ML algorithms, and real-world validation.</p>
-<!--    <a class="project-link" href="https://doi.org/10.1007/978-981-99-1726-6_6">Check it out</a>-->
+    <p>Developed ML model for Punjab crop yield prediction using 17 years of weather, soil, and NDVI data. Utilizing statistical methods, ML algorithms, and real-world validation.</p>
+    <!-- <a class="project-link" href="https://doi.org/10.1007/978-981-99-1726-6_6">Check it out</a> -->
   </div>
 </div>
+
 <div class="user-projects">
-  <div class="images-left">
-    <img alt="mountains" src="{{ "\assets\img\quote.jpg" | prepend: site.baseurl }}" />
+  <div id="slider2" class="slider">
+    <div class="slide"><img alt="sunrise" src="{{ "\assets\img\sunrise.jpg" | prepend: site.baseurl }}" /></div>
+    <div class="slide"><img alt="sunset" src="{{ "\assets\img\sunset.jpg" | prepend: site.baseurl }}" /></div>
   </div>
-  <div class="contents-right">
-    <h3> NN-from-Scratch</h3>
+  <div class="contents">
+    <h3>NN-from-Scratch</h3>
     <ul>
       <li>DeepLearning, Neural-Networks</li>
     </ul>
@@ -28,3 +31,47 @@ ML algorithms, and real-world validation.</p>
     <a class="project-link" href="https://github.com/helloitsdaksh/NN-from-Scratch">Check it out</a>
   </div>
 </div>
+
+<script>
+  // JavaScript for slider functionality
+  let slideIndex1 = 0;
+  showSlides("slider1");
+
+  let slideIndex2 = 0;
+  showSlides("slider2");
+
+  function showSlides(sliderId) {
+    let slides = document.getElementById(sliderId).getElementsByClassName("slide");
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    if (sliderId === "slider1") {
+      slideIndex1++;
+      if (slideIndex1 > slides.length) { slideIndex1 = 1 }
+      slides[slideIndex1 - 1].style.display = "block";
+      setTimeout(() => showSlides(sliderId), 2000); // Change image every 2 seconds
+    } else if (sliderId === "slider2") {
+      slideIndex2++;
+      if (slideIndex2 > slides.length) { slideIndex2 = 1 }
+      slides[slideIndex2 - 1].style.display = "block";
+      setTimeout(() => showSlides(sliderId), 3000); // Change image every 3 seconds
+    }
+  }
+</script>
+
+<style>
+  /* CSS for slider */
+  .slider {
+    max-width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .slide {
+    display: none;
+  }
+
+  .slide img {
+    width: 100%;
+  }
+</style>
