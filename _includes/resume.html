@@ -1,61 +1,3 @@
-<style>
-  /* Sidebar */
-  .sidebar {
-    position: fixed;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    background-color: #f4f4f4;
-    padding: 20px;
-    z-index: 999;
-    display: none; /* Initially hidden */
-  }
-
-  /* Sidebar links */
-  .sidebar ul {
-    list-style-type: none;
-    padding: 0;
-  }
-
-  .sidebar li {
-    margin-bottom: 10px;
-  }
-
-  .sidebar a {
-    display: block;
-    text-decoration: none;
-    color: #333;
-    transition: color 0.3s;
-    padding: 5px 10px;
-    border-radius: 5px;
-  }
-
-  /* Active link */
-  .sidebar a.active {
-    color: #007bff;
-    background-color: #e9e9e9;
-  }
-
-  /* Content sections */
-  .content {
-    margin-right: 200px; /* Adjust according to sidebar width */
-    padding: 20px;
-  }
-</style>
-
-<div class="sidebar" id="sidebar">
-  <ul>
-    <li><a href="#summary">Summary</a></li>
-    <li><a href="#education">Education</a></li>
-    <li><a href="#work-experience">Work Experience</a></li>
-    <li><a href="#leadership-and-involvement">Leadership and Involvement</a></li>
-    <li><a href="#publications">Publications</a></li>
-    <li><a href="#skills-and-interests">Skills and Interests</a></li>
-    <li><a href="#achievements-and-certifications">Achievements and Certifications</a></li>
-  </ul>
-</div>
-
-<div class="content">
 <div class="user-details">
   <h1>Resume</h1>
 </div>
@@ -144,29 +86,23 @@
   </ul>
 </div>
 
-</div>
 
-<!-- Other sections omitted for brevity -->
 
+<div style="position: fixed; bottom: 20px; right: 20px;">
+  <button onclick="scrollToSection('summary')">Summary</button>
+  <button onclick="scrollToSection('education')">Education</button>
+  <button onclick="scrollToSection('work-experience')">Work Experience</button>
+  <button onclick="scrollToSection('leadership-and-involvement')">Leadership and Involvement</button>
+  <button onclick="scrollToSection('publications')">Publications</button>
+  <button onclick="scrollToSection('skills-and-interests')">Skills and Interests</button>
+  <button onclick="scrollToSection('achievements-and-certifications')">Achievements and Certifications</button>
 </div>
 
 <script>
-// Function to toggle sidebar visibility based on scroll position
-function toggleSidebar() {
-  var sidebar = document.querySelector(".sidebar");
-  var resumeSection = document.querySelector(".content");
-  var resumeSectionTop = resumeSection.offsetTop;
-  var resumeSectionHeight = resumeSection.offsetHeight;
-  var viewportHeight = window.innerHeight;
-  var scrollPosition = window.scrollY || window.pageYOffset;
-
-  if (scrollPosition >= resumeSectionTop && scrollPosition <= (resumeSectionTop + resumeSectionHeight - (resumeSectionHeight * 0.1))) {
-    sidebar.style.display = "block";
-  } else {
-    sidebar.style.display = "none";
+  function scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
   }
-}
-
-// Add scroll event listener to toggle sidebar visibility
-window.addEventListener("scroll", toggleSidebar);
 </script>
