@@ -1,3 +1,17 @@
+<style>
+    /* Styles for resume content */
+    .resume-content {
+    }
+
+    /* Style for the next button */
+    .next-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+    }
+  </style>
+<div class="resume-content"></div>
 <div class="user-details">
   <h1>Resume</h1>
 </div>
@@ -88,21 +102,45 @@
 
 
 
-<div style="position: fixed; bottom: 20px; right: 20px;">
-  <button onclick="scrollToSection('summary')">Summary</button>
-  <button onclick="scrollToSection('education')">Education</button>
-  <button onclick="scrollToSection('work-experience')">Work Experience</button>
-  <button onclick="scrollToSection('leadership-and-involvement')">Leadership and Involvement</button>
-  <button onclick="scrollToSection('publications')">Publications</button>
-  <button onclick="scrollToSection('skills-and-interests')">Skills and Interests</button>
-  <button onclick="scrollToSection('achievements-and-certifications')">Achievements and Certifications</button>
-</div>
+<button class="next-button" onclick="scrollToNextSection()">Next</button>
 
 <script>
-  function scrollToSection(sectionId) {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
+  // Function to scroll to the next resume section
+  function scrollToNextSection() {
+    // Get all resume sections
+    const sections = document.querySelectorAll('.resume-content > div');
+    // Get the current scroll position
+    const currentPosition = window.scrollY || window.pageYOffset;
+    // Find the next section
+    let nextSection;
+    sections.forEach(section => {
+      const sectionPosition = section.offsetTop;
+      if (sectionPosition > currentPosition) {
+        nextSection = section;
+        return;
+      }
+    });
+    // Scroll to the next section
+    if (nextSection) {
+      nextSection.scrollIntoView({ behavior: 'smooth' });
     }
   }
+
+  // Function to toggle visibility of the next button based on scroll position
+  function toggleNextButtonVisibility() {
+    const resumeContent = document.querySelector('.resume-content');
+    const nextButton = document.querySelector('.next-button');
+    const scrollPosition = window.scrollY || window.pageYOffset;
+    const resumeTop = resumeContent.offsetTop;
+    const resumeBottom = resumeContent.offsetTop + resumeContent.offsetHeight;
+
+    if (scrollPosition >= resumeTop && scrollPosition < resumeBottom) {
+      nextButton.style.display = 'block';
+    } else {
+      nextButton.style.display = 'none';
+    }
+  }
+
+  // Add event listener for scroll to toggle next button visibility
+  window.addEventListener('scroll', toggleNextButtonVisibility);
 </script>
