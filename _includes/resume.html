@@ -1,18 +1,3 @@
-<style>
-    /* Styles for resume content */
-    .resume-content {
-      padding: 10px;
-    }
-
-    /* Style for the next button */
-    .next-button {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      display: none;
-    }
-  </style>
-<div class="resume-content"></div>
 <div class="user-details">
   <h1>Resume</h1>
 </div>
@@ -36,31 +21,64 @@
 </div>
 
 <div id="work-experience">
-  <h2>Work Experience</h2>
+    <h2>Work Experience</h2>
+    <p>
+        <strong style="display: flex; justify-content: space-between">University of Southern California <span>Los Angeles, CA</span></strong>
+        <strong style="display: flex; justify-content: space-between">Teaching Assistant (Course Producer) <span>Jan 2024-Present</span></strong>
+        <ul>
+            <li>Earned the Teaching Assistant role by ranking among the Top 5 students in DSCI 552 Machine Learning for Data Science.</li>
+            <li>Provided personalized guidance and clarification to students, ensuring their success in completing Data Science tasks effectively</li>
+            <li>Offered assistance and clarification to students, ensuring their comprehension and success in completing Data Science tasks</li>
+        </ul>
+    </p>
+    <p>
+        <strong style="display: flex; justify-content: space-between">Keck School of Medicine, USC <span>Los Angeles, CA</span></strong>
+        <strong style="display: flex; justify-content: space-between">Research Assistant <span>Nov 2023-Present</span></strong>
+        <ul>
+            <li>Led research endeavors aimed at enhancing medical image classification algorithms, resulting in heightened diagnostic precision. Utilized
+                quantization techniques to decrease model parameters and enhance computational efficiency by 15%.</li>
+            <li>Implemented a novel data preprocessing approach to mitigate data imbalance and enhance model robustness, leading to superior classification
+                performance and a boosted weighted accuracy of 10%</li>
+            <li>Applied cutting-edge deep learning methodologies to optimize feature extraction and classification processes, thereby improving interpretability
+                and efficiency of medical imaging systems.</li>
+        </ul>
+    </p>
+    <p>
+        <strong style="display: flex; justify-content: space-between">Siksti Technologies <span>Bengaluru, India</span></strong>
+        <strong style="display: flex; justify-content: space-between">Machine Learning Engineer <span>Jan 2023-Sept 2023</span></strong>
+        <ul>
+            <li>Leveraged data analysis techniques to identify sales trends, enabling data-driven decision-making and contributing to a 10% increase in revenue</li>
+            <li>Engineered and implemented innovative backend solutions using Django and PostgreSQL, resulting in an 80% enhancement in efficiency for
+                catalog and inventory upload processes</li>
+            <li>Boosted API response time by 66% through the application of performance optimization techniques, significantly improving user experience</li>
+        </ul>
+    </p>
+</div>
+
+<div id="publications">
+  <h2>Publications</h2>
   <p>
-    <strong style="display: flex; justify-content: space-between">University of Southern California <span>Los Angeles, CA</span></strong>
-    <strong style="display: flex; justify-content: space-between">Teaching Assistant (Course Producer) <span>Jan 2024-Present</span></strong>
-    <ul>
-    <li>Provided personalized guidance to students, aiding them in understanding and approaching Data Science assignments effectively</li>
-    <li> Offered assistance and clarification to students, ensuring their comprehension and success in completing Data Science tasks</li>
-    </ul>
+        <strong>Predicting Agricultural Yield by Integrating Remote Sensing</strong> [link] (Jan 2023-May 2023)
+        <ul>
+            <li>Developed an ML model for Punjab crop yield prediction by leveraging 17 years of weather, soil, and NDVI data, incorporating statistical methods, ML algorithms, and real-world validation. Integrated findings into the research publication in ICoISS (June. 2023) to improve the accuracy of yield predictions.</li>
+        </ul>
   </p>
+    <p>
+        <strong>Research work: Blockchain-based Food Supply Chain</strong> [link] (Aug 2021-Nov 2021)
+        <ul>
+            <li>Developed a robust double blockchain framework to enhance transparency, traceability, and trust in the agricultural supply chain. Conducted comprehensive research on blockchain technology's application in the food supply chain, resulting in a publication in Procedia Computer Science (Jan. 2022)</li>
+        </ul>
+    </p>
+</div>
+
+<div id="skills-and-interests">
+  <h2>Skills and Interests</h2>
   <p>
-    <strong style="display: flex; justify-content: space-between">Keck School of Medicine, USC<span> Los Angeles, CA</span></strong>
-    <strong style="display: flex; justify-content: space-between">Research Assistant<span>Nov 2023-Present</span></strong>
     <ul>
-    <li>Led research endeavors aimed at enhancing medical image classification algorithms, resulting in heightened diagnostic precision</li>
-    <li>Applied cutting-edge deep learning methodologies to optimize feature extraction and classification processes, thereby improving interpretability and efficiency of medical imaging systems</li>
-    <li>Implemented a novel data preprocessing approach to mitigate imbalance and enhance model robustness during training, leading to superior classification performance and a boosted accuracy by 10%</li>
-    </ul>
-  </p>
-  <p>
-    <strong style="display: flex; justify-content: space-between">Siksti Technologies<span>Bengaluru, India</span></strong>
-    <strong style="display: flex; justify-content: space-between">Data Scientist/Backend Developer<span>Jan 2023-Sept 2023</span></strong>
-    <ul>
-    <li>Leveraged data analysis techniques to identify sales trends, enabling data-driven decision-making and contributing to a 10% increase in revenue</li>
-    <li>Engineered and implemented innovative backend solutions using Django and PostgreSQL, resulting in an 80% enhancement in efficiency for catalog and inventory upload processes</li>
-    <li>Boosted API response time by 66% through the application of performance optimization techniques, significantly improving user experience</li>
+    <li><strong>Languages</strong>: Python, R, Java, C++</li>
+    <li><strong>Frameworks/Libraries</strong>: TensorFlow, PyTorch, Scikit-learn, XGBoost, CatBoost, Pandas, NumPy, SpaCy, Tesseract, Statsmodels, Matplotlib, Seaborn, Keras, BeautifulSoup, Selenium, Django, Flask</li>
+    <li><strong>Databases and Cloud</strong>: SQL, PostgreSQL, NoSQL, JSON, XML, Firebase, AWS, Azure</li>
+    <li><strong>Big Data Tools and Technologies</strong>: Spark, Hadoop, Hive, Tableau, Power BI, Kafka, Apache Airflow, Jenkins, JIRA, Redis, Excel</li>
     </ul>
   </p>
 </div>
@@ -77,75 +95,14 @@
    </p>
 </div>
 
-<div id="publications">
-  <h2>Publications</h2>
-  <ul>
-    <li><strong>Patel, D., Das, B., & Minu, R. I.</strong> (2023). The effects of climate change on crop yield. In Lecture notes in networks and systems (pp. 59–71). DOI: 10.1007/978-981-99-1726-6_6</li>
-    <li><strong>Patel, D., Sinha, A., Bhansali, T., Usha, G., & Velliangiri, S.</strong> (2022). Blockchain in food supply chain. Procedia Computer Science, 215, 321–330. DOI: 10.1016/j.procs.2022.12.034</li>
-  </ul>
-</div>
-
-<div id="skills-and-interests">
-  <h2>Skills and Interests</h2>
-  <p>
-    <ul>
-    <li><strong>Languages</strong>: Python, R, Java, CPP</li>
-    <li><strong>Frameworks/Libraries</strong>: TensorFlow, PyTorch, Scikit-learn, XGBoost, CatBoost, Pandas, NumPy, SpaCy, Tesseract, Statsmodels, Matplotlib, Seaborn, Keras, BeautifulSoup, Selenium, Django, Flask</li>
-    <li><strong>Databases and Cloud</strong>: SQL, PostgreSQL, NoSQL, JSON, XML, Firebase, AWS, Azure</li>
-    <li><strong>Big Data Tools and Technologies</strong>: Spark, Hadoop, Hive, Tableau, Power BI, Kafka, Apache Airflow, Jenkins, JIRA, Redis, Excel</li>
-    </ul>
-  </p>
-</div>
-
 <div id="achievements-and-certifications">
   <h2>Achievements and Certifications</h2>
   <ul>
-    <li>Among the Top 5 students in DSCI 552 Machine Learning for Data Science under Prof. Mohammad Reza Rajati.</li>
+    <li>Among Top 5 Teams in a hackathon organized in the field of Computer Vision. Developed a Document Enhancer App specifically designed to enhance and extract information from Government IDs.</li>
+    <li>Secured 3rd Position for Final Year Project, which was then published in the journal ICIoSS. This project was part of the Dean's Collaborative Project Initiative at SRM Institute of Science and Technology.</li>
     <li>Machine Learning by Stanford University, Coursera, and Deep Learning Specialization by DeepLearning.AI, Coursera.</li>
+
   </ul>
 </div>
 
 
-
-<button class="next-button" onclick="scrollToNextSection()">Next</button>
-
-<script>
-  // Function to scroll to the next resume section
-  function scrollToNextSection() {
-    // Get all resume sections
-    const sections = document.querySelectorAll('.resume-content > div');
-    // Get the current scroll position
-    const currentPosition = window.scrollY || window.pageYOffset;
-    // Find the next section
-    let nextSection;
-    sections.forEach(section => {
-      const sectionPosition = section.offsetTop;
-      if (sectionPosition > currentPosition) {
-        nextSection = section;
-        return;
-      }
-    });
-    // Scroll to the next section
-    if (nextSection) {
-      nextSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  }
-
-  // Function to toggle visibility of the next button based on scroll position
-  function toggleNextButtonVisibility() {
-    const resumeContent = document.querySelector('.resume-content');
-    const nextButton = document.querySelector('.next-button');
-    const scrollPosition = window.scrollY || window.pageYOffset;
-    const resumeTop = resumeContent.offsetTop;
-    const resumeBottom = resumeContent.offsetTop + resumeContent.offsetHeight;
-
-    if (scrollPosition >= resumeTop && scrollPosition < resumeBottom) {
-      nextButton.style.display = 'block';
-    } else {
-      nextButton.style.display = 'none';
-    }
-  }
-
-  // Add event listener for scroll to toggle next button visibility
-  window.addEventListener('scroll', toggleNextButtonVisibility);
-</script>
