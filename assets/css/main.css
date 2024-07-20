@@ -3642,9 +3642,9 @@ sub,sup{
 
 /* Variables */
 :root {
-  --background: #252827;
-  --color-primary: #004ffc;
-  --color-light: #E7ECEF;
+  --background: #ffffff;
+  --color-primary: #1a222c;
+  --color-light: #000000;
   --color-dim: #6c6d6d;
   --spacing: 50px;
   --radius: 4px;
