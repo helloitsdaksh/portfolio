@@ -3686,17 +3686,18 @@ h3 {
 .timeline-item {
   border-left: var(--line) solid var(--color-primary);
   margin: var(--spacing) 0;
-  padding-left: calc(var(--spacing) + var(--dot) + var(--dotborder));
+  padding: var(--spacing);
   position: relative;
   background: var(--background);
   color: var(--color-light);
+  border-radius: var(--radius);
   font-family: var(--font-text);
 }
 
 .timeline-item:before {
   content: attr(data-date);
   position: absolute;
-  left: 0;
+  left: calc(-1 * var(--date));
   width: var(--date);
   text-align: right;
   color: var(--color-dim);
@@ -3706,15 +3707,16 @@ h3 {
 .timeline-item:after {
   content: '';
   position: absolute;
-  left: calc(var(--date) + var(--spacing) / 2 - var(--dot) / 2);
+  left: calc(-1 * (var(--dot) + var(--line)));
   width: var(--dot);
   height: var(--dot);
   border-radius: 50%;
   background: var(--color-primary);
   border: var(--dotborder) solid var(--color-light);
-  top: 5px;
+  top: 10px;
 }
 
+/* Item details */
 .timeline-item strong {
   display: block;
   color: var(--color-light);
@@ -3726,15 +3728,7 @@ h3 {
   color: var(--color-dim);
 }
 
-.position {
-  margin-top: 20px;
-}
-
-.position strong {
-  display: flex;
-  justify-content: space-between;
-}
-
+/* List styles */
 ul {
   padding-left: 20px;
 }
