@@ -3728,12 +3728,19 @@ h3 {
   color: var(--color-dim);
 }
 
-/* List styles */
+.position {
+  margin-top: 20px;
+}
+
+.position strong {
+  display: flex;
+  justify-content: space-between;
+}
+
 ul {
   padding-left: 20px;
 }
 
 ul li {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
-
