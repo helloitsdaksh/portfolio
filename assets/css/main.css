@@ -3654,7 +3654,7 @@ sub,sup{
   --dot: 11px;
   --line: 4px;
   --font-title: 'Montserrat', sans-serif;
-  --font-text: 'Montserrat, sans-serif;
+  --font-text: 'Montserrat', sans-serif;
 }
 
 /* Base */
