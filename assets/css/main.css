@@ -3686,18 +3686,17 @@ h3 {
 .timeline-item {
   border-left: var(--line) solid var(--color-primary);
   margin: var(--spacing) 0;
-  padding: var(--spacing);
+  padding-left: calc(var(--spacing) + var(--dot) + var(--dotborder));
   position: relative;
   background: var(--background);
   color: var(--color-light);
-  border-radius: var(--radius);
   font-family: var(--font-text);
 }
 
 .timeline-item:before {
   content: attr(data-date);
   position: absolute;
-  left: calc(-1 * var(--date));
+  left: 0;
   width: var(--date);
   text-align: right;
   color: var(--color-dim);
@@ -3707,16 +3706,15 @@ h3 {
 .timeline-item:after {
   content: '';
   position: absolute;
-  left: calc(-1 * (var(--dot) + var(--line)));
+  left: calc(var(--date) + var(--spacing) / 2 - var(--dot) / 2);
   width: var(--dot);
   height: var(--dot);
   border-radius: 50%;
   background: var(--color-primary);
   border: var(--dotborder) solid var(--color-light);
-  top: 10px;
+  top: 5px;
 }
 
-/* Item details */
 .timeline-item strong {
   display: block;
   color: var(--color-light);
