@@ -3640,3 +3640,36 @@ sub,sup{
   font-weight: bold;
 }
 
+
+.profile-picture {
+    position: relative;
+    width: 50%; /* Adjust the container size */
+    margin: 0 auto; /* Centers the image within the div */
+}
+
+.profile-picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 50%;
+    transition: opacity 0.5s ease-in-out; /* Smooth transition for opacity */
+}
+
+#profilePic {
+    opacity: 1; /* Initially, the profile picture is visible */
+    z-index: 1;
+}
+
+#memojiPic {
+    opacity: 0; /* Initially, the memoji is hidden */
+    z-index: 0;
+}
+
+.profile-picture:hover #profilePic {
+    opacity: 0; /* Fade out profile picture on hover */
+}
+
+.profile-picture:hover #memojiPic {
+    opacity: 1; /* Fade in memoji on hover */
+}

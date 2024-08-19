@@ -1,8 +1,9 @@
 <div id="particles-js">
   <div class="header">
       <div class="profile-picture">
-       <img alt="profile_pic" style="width: 50%;" src="{{ "\assets\img\profile_picture.png" | prepend: site.baseurl }}" />
-      </div>
+        <img id="profilePic" alt="profile_pic" src="{{ "\assets\img/profile_picture.png" | prepend: site.baseurl }}" />
+        <img id="memojiPic" alt="memoji_pic" src="{{ "\assets\img/memoji_picture.png" | prepend: site.baseurl }}" />
+    </div>
       <h1>
         <span class="site-title">{{site.username}}</span>
         <span class="site-description">{{site.user_title}}</span>
