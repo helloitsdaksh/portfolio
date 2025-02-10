@@ -3640,3 +3640,15 @@ sub,sup{
   font-weight: bold;
 }
 
+.chart-container {
+  min-width: 250px;
+  max-width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+canvas {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+}
