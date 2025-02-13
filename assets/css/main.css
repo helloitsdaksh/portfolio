@@ -3648,26 +3648,9 @@ sub,sup{
   align-items: center;
     }
 canvas {
-    max-width: 600px; /* Forces a smaller width */
-    max-height: 600px; /* Forces a smaller height */
+    max-width: 400px; /* Forces a smaller width */
+    max-height: 400px; /* Forces a smaller height */
     width: 100%;
     height: auto;
     box-sizing: border-box;
-}
-
-#myChart {
-    /* Ensure the chart scales properly */
-    width: 100%;
-    height: auto;
-}
-
-@media (max-width: 768px) {  // Adjust breakpoint as needed
-    .chart-container canvas {
-        height: 350px !important; // Fixed height for small screens (if needed)
-    }
-
-    /* If you're NOT using the datalabels plugin and just using pointLabels: */
-    .chart-container canvas .chartjs-labels {
-        font-size: 10px !important; // Smaller font size on small screens
-    }
 }

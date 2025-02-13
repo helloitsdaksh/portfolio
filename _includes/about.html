@@ -1,267 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio - Daksh Patel</title>
     <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-</head>
+  </head>
 
-<body>
-<div class="user-details">
-    <h1>About Me</h1>
-</div>
-
-<div class="about-container">
-    <!-- About Me Text -->
-    <div class="about-text">
-        <p align="justify">
-
-            Hello, I’m Daksh Patel, a passionate Data Scientist and AI Engineer
-            based in Los Angeles, California. Pursuing a Master’s in Applied Data
-            Science from the University of Southern California and a Bachelor’s in
-            Computer Science, I thrive on transforming data into actionable
-            insights and innovative solutions. My expertise spans across machine
-            learning, natural language processing, and computer vision, and I
-            enjoy leveraging these skills to tackle complex challenges and drive
-            impactful results.
-        </p>
-         <div class="chart-container">
-            <canvas id="myChart"></canvas>
-        </div>
+  <body>
+    <div class="user-details">
+      <h1>About Me</h1>
     </div>
-</div>
 
-<div class="user-details">
-    <h2 id="what-i-do"><strong>What I Do</strong></h2>
-</div>
-<div>
-    <ul>
-        <li>
-            🔭 Machine Learning & Deep Learning: Building and fine-tuning models
-            for various applications, from natural language processing to computer
-            vision.
-        </li>
-        <li>
-            📊 Data Analysis & Visualization: Extracting meaningful patterns from
-            data and presenting them in a comprehensible manner using cutting-edge
-            tools.
-        </li>
-        <li>
-            🤖 NLP & AI Engineering: Developing intelligent systems and chatbots,
-            enhancing user experiences with voice interactions and interactive
-            queries.
-        </li>
-        <li>
-            ⚙️ Big Data Technologies: Utilizing tools like Spark and Hadoop to
-            handle and analyze large datasets efficiently.
-        </li>
-    </ul>
-    <p>
-        Currently, I’m a Machine Learning Engineer/Data Engineer Intern at Northern Lights Post Inc., working on
-        large-scale data processing, content analysis, and ML pipeline optimization. Previously, as an NLP Researcher/AI
-        Engineer Intern at Kintsugi Global, I fine-tuned LLMs, optimized multimodal pipelines, and integrated voice
-        generation technologies. Additionally, I serve as a Teaching Assistant at USC, mentoring students in machine
-        learning concepts and applications.
-    </p>
-</div>
+    <div class="about-container">
+      <!-- About Me Text -->
+      <div class="about-text">
+        <p align="justify">
+          Hello, I’m Daksh Patel, a passionate Data Scientist and AI Engineer
+          based in Los Angeles, California. Pursuing a Master’s in Applied Data
+          Science from the University of Southern California and a Bachelor’s in
+          Computer Science, I thrive on transforming data into actionable
+          insights and innovative solutions. My expertise spans across machine
+          learning, natural language processing, and computer vision, and I
+          enjoy leveraging these skills to tackle complex challenges and drive
+          impactful results.
+        </p>
+        <div class="chart-container">
+          <canvas id="myChart"></canvas>
+        </div>
+      </div>
+    </div>
 
-<div class="user">
-    <div class="tech">
+    <div class="user-details">
+      <h2 id="what-i-do"><strong>What I Do</strong></h2>
+    </div>
+    <div>
+      <ul>
+        <li>
+          🔭 Machine Learning & Deep Learning: Building and fine-tuning models
+          for various applications, from natural language processing to computer
+          vision.
+        </li>
+        <li>
+          📊 Data Analysis & Visualization: Extracting meaningful patterns from
+          data and presenting them in a comprehensible manner using cutting-edge
+          tools.
+        </li>
+        <li>
+          🤖 NLP & AI Engineering: Developing intelligent systems and chatbots,
+          enhancing user experiences with voice interactions and interactive
+          queries.
+        </li>
+        <li>
+          ⚙️ Big Data Technologies: Utilizing tools like Spark and Hadoop to
+          handle and analyze large datasets efficiently.
+        </li>
+      </ul>
+      <p>
+        Currently, I’m a Machine Learning Engineer/Data Engineer Intern at
+        Northern Lights Post Inc., working on large-scale data processing,
+        content analysis, and ML pipeline optimization. Previously, as an NLP
+        Researcher/AI Engineer Intern at Kintsugi Global, I fine-tuned LLMs,
+        optimized multimodal pipelines, and integrated voice generation
+        technologies. Additionally, I serve as a Teaching Assistant at USC,
+        mentoring students in machine learning concepts and applications.
+      </p>
+    </div>
+
+    <div class="user">
+      <div class="tech">
         <h2>Frameworks</h2>
         <i class="devicon-django-plain colored"></i>
         <i class="devicon-tensorflow-original colored"></i>
         <i class="devicon-pytorch-original colored"></i>
-    </div>
-    <div class="tech">
+      </div>
+      <div class="tech">
         <h2>Tech Stack</h2>
         <i class="devicon-python-plain colored"></i>
         <i class="devicon-numpy-original colored"></i>
         <i class="devicon-pandas-original colored"></i>
         <i class="devicon-postgresql-plain colored"></i>
-    </div>
-    <div class="tech">
+      </div>
+      <div class="tech">
         <h2>Tools</h2>
         <i class="devicon-github-original colored"></i>
         <i class="devicon-pycharm-plain colored"></i>
-        <i class="devicon-jupyter-plain-wordmark colored"></i><br/>
+        <i class="devicon-jupyter-plain-wordmark colored"></i><br />
+      </div>
     </div>
-</div>
 
-<script>
-                    const data = {
-          labels: [
-              // **Layer 1: Core ML & Data Science**
-              "ML Ops", "Deployment", "Data Pipeline", "Database", "Data Viz",
-              "Storytelling", "Business Intelligence", "Research", "Statistics", "ML Modelling",
+    <script>
+                      const data = {
+            labels: [
+                // **Layer 1: Core ML & Data Science**
+                "ML Ops", "Deployment", "Data Pipeline", "Database", "Data Viz",
+                "Storytelling", "Business Intelligence", "Research", "Statistics", "ML Modelling",
 
-              // **Layer 2: Advanced ML Techniques**
-              "Feature Engineering", "Model Interpretability", "Deep Learning", "Generative AI",
-              "Foundation Models", "Reinforcement Learning", "Time Series Analysis",
+                // **Layer 2: Advanced ML Techniques**
+                "Feature Engineering", "Model Interpretability", "Deep Learning", "Generative AI",
+                "Foundation Models", "Reinforcement Learning", "Time Series Analysis",
 
-              // **Layer 3: Engineering & Infrastructure**
-              "Data Engineering", "Cloud Computing", "Scalability", "Distributed Systems",
+                // **Layer 3: Engineering & Infrastructure**
+                "Data Engineering", "Cloud Computing", "Scalability", "Distributed Systems",
 
-              // **Layer 4: Research & Optimization**
-              "Optimization", "Experimentation", "Model Evaluation"
-          ],
-          datasets: [
-              {
-                  label: "Core ML & Data Science",
-                  data: [5, 4, 5, 4, 5, 5, 4, 5, 5, 5, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null],
-                  backgroundColor: 'rgba(54, 162, 235, 0.2)', // Light Blue
-                  borderColor: 'rgba(54, 162, 235, 1)', // Dark Blue Border
-                  borderWidth: 2,
-                  pointBackgroundColor: 'rgba(54, 162, 235, 1)', // Blue Points
-                  pointRadius: 5,
+                // **Layer 4: Research & Optimization**
+                "Optimization", "Experimentation", "Model Evaluation"
+            ],
+            datasets: [
+                {
+                    label: "Core ML & Data Science",
+                    data: [5, 4, 5, 4, 5, 5, 4, 5, 5, 5, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null],
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)', // Light Blue
+                    borderColor: 'rgba(54, 162, 235, 1)', // Dark Blue Border
+                    borderWidth: 2,
+                    pointBackgroundColor: 'rgba(54, 162, 235, 1)', // Blue Points
+                    pointRadius: 5,
+                },
+                {
+                    label: "Advanced ML Techniques",
+                    data: [null, null, null, null, null, null, null, null, null, null, 5, 5, 5, 5, 5, 4, 5, null, null, null, null, null, null, null, null, null],
+                    backgroundColor: 'rgba(255, 99, 132, 0.2)', // Light Red
+                    borderColor: 'rgba(255, 99, 132, 1)', // Dark Red Border
+                    borderWidth: 2,
+                    pointBackgroundColor: 'rgba(255, 99, 132, 1)', // Red Points
+                    pointRadius: 5,
+                },
+                {
+                    label: "Engineering & Infrastructure",
+                    data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 5, 4, 5, 5, null, null, null, null, null],
+                    backgroundColor: 'rgba(255, 206, 86, 0.2)', // Light Yellow
+                    borderColor: 'rgba(255, 206, 86, 1)', // Dark Yellow Border
+                    borderWidth: 2,
+                    pointBackgroundColor: 'rgba(255, 206, 86, 1)', // Yellow Points
+                    pointRadius: 5,
+                },
+                {
+                    label: "Research & Optimization",
+                    data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 5, 4, 5],
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)', // Light Teal
+                    borderColor: 'rgba(75, 192, 192, 1)', // Dark Teal Border
+                    borderWidth: 2,
+                    pointBackgroundColor: 'rgba(75, 192, 192, 1)', // Teal Points
+                    pointRadius: 5,
+                }
+            ]
+        };
+
+        const config = {
+            type: 'radar',
+            data: data,
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                animation: {
+                  duration: 1000,
+                  easing: 'easeInOutBounce' // Smooth animation effect
               },
-              {
-                  label: "Advanced ML Techniques",
-                  data: [null, null, null, null, null, null, null, null, null, null, 5, 5, 5, 5, 5, 4, 5, null, null, null, null, null, null, null, null, null],
-                  backgroundColor: 'rgba(255, 99, 132, 0.2)', // Light Red
-                  borderColor: 'rgba(255, 99, 132, 1)', // Dark Red Border
-                  borderWidth: 2,
-                  pointBackgroundColor: 'rgba(255, 99, 132, 1)', // Red Points
-                  pointRadius: 5,
-              },
-              {
-                  label: "Engineering & Infrastructure",
-                  data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 5, 4, 5, 5, null, null, null, null, null],
-                  backgroundColor: 'rgba(255, 206, 86, 0.2)', // Light Yellow
-                  borderColor: 'rgba(255, 206, 86, 1)', // Dark Yellow Border
-                  borderWidth: 2,
-                  pointBackgroundColor: 'rgba(255, 206, 86, 1)', // Yellow Points
-                  pointRadius: 5,
-              },
-              {
-                  label: "Research & Optimization",
-                  data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 5, 4, 5],
-                  backgroundColor: 'rgba(75, 192, 192, 0.2)', // Light Teal
-                  borderColor: 'rgba(75, 192, 192, 1)', // Dark Teal Border
-                  borderWidth: 2,
-                  pointBackgroundColor: 'rgba(75, 192, 192, 1)', // Teal Points
-                  pointRadius: 5,
-              }
-          ]
-      };
+                plugins: {
+                    legend: {
+                        display: true,
+                        position: 'bottom',
+                    },
+                    tooltip: {
+                        enabled: true,
+                        backgroundColor: 'rgba(0, 0, 0, 0.7)',
+                        titleFont: { size: 14, weight: 'bold', color: '#ffffff' },
+                        bodyFont: { size: 12, weight: 'bold', color: '#ffffff' }
+                    }
+                },
+                scales: {
+                    r: {
+                        beginAtZero: true,
+                        suggestedMax: 5,
+                        ticks: { stepSize: 1, showLabelBackdrop: false, display: false },
+                        grid: { color: 'rgba(200, 200, 200, 0.3)' },
+                        angleLines: { color: 'rgba(100, 100, 100, 0.2)' },
+                        pointLabels: {
+                            font: { size: 6, weight: 'light' },
+                            color: 'rgba(38,70,83,0.84)',
+                            callback: function(label) {
+                              // For instance, split on spaces so each word is on a new line
+                              return label.split(" ");
+                            }
+                        }
+                    }
+                }
+            }
+        };
+      // const data = {
+      //     labels: ["ML Ops", "Deployment", "Data Pipeline", "Database", "Data Viz",
+      //         "Storytelling", "Business Intelligence", "Research", "Statistics", "ML Modelling"],
+      //     datasets: [{
+      //         label: " Skills",
+      //         data: [5, 4, 5, 4, 5, 5, 3, 4, 5, 5],
+      //         backgroundColor: 'rgba(42,157,143,0.25)', // Bright Coral Red Fill
+      //         borderColor: 'rgb(42,157,143)', // Deep Coral Red Border
+      //         borderWidth: 2,
+      //         pointBackgroundColor: 'rgb(42,157,143)', // Bright Yellow Data Points
+      //         pointHoverBackgroundColor: 'rgba(54, 162, 235, 1)', // Blue Highlight on Hover
+      //         pointRadius: 2,
+      //         pointHoverRadius: 8
+      //     }]
+      // };
+      //
+      // const config = {
+      //     type: 'radar',
+      //     data: data,
+      //     options: {
+      //         responsive: true,
+      //         maintainAspectRatio: false,
+      //         animation: {
+      //             duration: 1000,
+      //             easing: 'easeInOutBounce' // Smooth animation effect
+      //         },
+      //         hover: { mode: 'nearest' },
+      //         plugins: {
+      //             legend: {
+      //                 display: false,
+      //             },
+      //             tooltip: {
+      //                 enabled: true,
+      //                 backgroundColor: 'rgba(0, 0, 0, 0.7)', // Dark Tooltip Background
+      //                 titleFont: {
+      //                     size: 14,
+      //                     weight: 'bold',
+      //                     color: '#ffffff' // White Tooltip Title
+      //                 },
+      //                 bodyFont: {
+      //                     size: 12,
+      //                     weight: 'bold',
+      //                     color: '#ffffff' // White Tooltip Text
+      //                 }
+      //             }
+      //         },
+      //         scales: {
+      //             r: {
+      //                 beginAtZero: true,
+      //                 suggestedMax: 5,
+      //                 ticks: {
+      //                     stepSize: 1,
+      //                     showLabelBackdrop: false,
+      //                     display: false
+      //                 },
+      //                 grid: {
+      //                     color: 'rgba(100, 100, 100, 0.2)' // Subtle Grid
+      //                 },
+      //                 angleLines: {
+      //                     color: 'rgba(100,100,100,0.2)' // Soft Blue Angle Lines
+      //                 },
+      //                 pointLabels: {
+      //                     font: {
+      //                         size: 12,
+      //                         weight: 'bold'
+      //                     },
+      //                     color: 'rgba(38,70,83,0.84)' // Black Labels for Maximum Contrast
+      //                 }
+      //             }
+      //         }
+      //     }
+      // };
 
-      const config = {
-          type: 'radar',
-          data: data,
-          options: {
-              responsive: true,
-              maintainAspectRatio: true,
-              animation: {
-                duration: 1000,
-                easing: 'easeInOutBounce' // Smooth animation effect
-            },
-              plugins: {
-                  legend: {
-                      display: true,
-                      position: 'bottom',
-                  },
-                  tooltip: {
-                      enabled: true,
-                      backgroundColor: 'rgba(0, 0, 0, 0.7)',
-                      titleFont: { size: 14, weight: 'bold', color: '#ffffff' },
-                      bodyFont: { size: 12, weight: 'bold', color: '#ffffff' }
-                  }
-              },
-              scales: {
-                  r: {
-                      beginAtZero: true,
-                      suggestedMax: 5,
-                      ticks: { stepSize: 1, showLabelBackdrop: false, display: false },
-                      grid: { color: 'rgba(200, 200, 200, 0.3)' },
-                      angleLines: { color: 'rgba(100, 100, 100, 0.2)' },
-                      pointLabels: {
-                          font: { size: 12, weight: 'bold' },
-                          color: 'rgba(38,70,83,0.84)',
-                          wrap: true
-                      }
-                  }
-              }
-          }
-      };
-    // const data = {
-    //     labels: ["ML Ops", "Deployment", "Data Pipeline", "Database", "Data Viz",
-    //         "Storytelling", "Business Intelligence", "Research", "Statistics", "ML Modelling"],
-    //     datasets: [{
-    //         label: " Skills",
-    //         data: [5, 4, 5, 4, 5, 5, 3, 4, 5, 5],
-    //         backgroundColor: 'rgba(42,157,143,0.25)', // Bright Coral Red Fill
-    //         borderColor: 'rgb(42,157,143)', // Deep Coral Red Border
-    //         borderWidth: 2,
-    //         pointBackgroundColor: 'rgb(42,157,143)', // Bright Yellow Data Points
-    //         pointHoverBackgroundColor: 'rgba(54, 162, 235, 1)', // Blue Highlight on Hover
-    //         pointRadius: 2,
-    //         pointHoverRadius: 8
-    //     }]
-    // };
-    //
-    // const config = {
-    //     type: 'radar',
-    //     data: data,
-    //     options: {
-    //         responsive: true,
-    //         maintainAspectRatio: false,
-    //         animation: {
-    //             duration: 1000,
-    //             easing: 'easeInOutBounce' // Smooth animation effect
-    //         },
-    //         hover: { mode: 'nearest' },
-    //         plugins: {
-    //             legend: {
-    //                 display: false,
-    //             },
-    //             tooltip: {
-    //                 enabled: true,
-    //                 backgroundColor: 'rgba(0, 0, 0, 0.7)', // Dark Tooltip Background
-    //                 titleFont: {
-    //                     size: 14,
-    //                     weight: 'bold',
-    //                     color: '#ffffff' // White Tooltip Title
-    //                 },
-    //                 bodyFont: {
-    //                     size: 12,
-    //                     weight: 'bold',
-    //                     color: '#ffffff' // White Tooltip Text
-    //                 }
-    //             }
-    //         },
-    //         scales: {
-    //             r: {
-    //                 beginAtZero: true,
-    //                 suggestedMax: 5,
-    //                 ticks: {
-    //                     stepSize: 1,
-    //                     showLabelBackdrop: false,
-    //                     display: false
-    //                 },
-    //                 grid: {
-    //                     color: 'rgba(100, 100, 100, 0.2)' // Subtle Grid
-    //                 },
-    //                 angleLines: {
-    //                     color: 'rgba(100,100,100,0.2)' // Soft Blue Angle Lines
-    //                 },
-    //                 pointLabels: {
-    //                     font: {
-    //                         size: 12,
-    //                         weight: 'bold'
-    //                     },
-    //                     color: 'rgba(38,70,83,0.84)' // Black Labels for Maximum Contrast
-    //                 }
-    //             }
-    //         }
-    //     }
-    // };
-
-    const ctx = document.getElementById('myChart').getContext('2d');
-    new Chart(ctx, config);
-</script>
-</body>
+      const ctx = document.getElementById('myChart').getContext('2d');
+      new Chart(ctx, config);
+    </script>
+  </body>
 </html>
