@@ -3648,8 +3648,8 @@ sub,sup{
   align-items: center;
     }
 canvas {
-    max-width: 400px; /* Forces a smaller width */
-    max-height: 400px; /* Forces a smaller height */
+    max-width: 700px; /* Forces a smaller width */
+    max-height: 700px; /* Forces a smaller height */
     width: 100%;
     height: auto;
     box-sizing: border-box;
