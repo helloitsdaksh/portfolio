@@ -3646,11 +3646,30 @@ sub,sup{
   display: flex;
   justify-content: center;
   align-items: center;
-}
+    width: 90%; /* Occupy most of the screen width */
+    margin: 20px auto; /* Center the chart */
+    max-width: 600px; /* Limit max width on larger screens */
+    }
 canvas {
     max-width: 500px; /* Forces a smaller width */
     max-height: 500px; /* Forces a smaller height */
     width: 100%;
     height: auto;
     box-sizing: border-box;
+}
+
+#myChart {
+    /* Ensure the chart scales properly */
+    width: 100%;
+    height: auto;
+}
+
+/* Styles for smaller screens (adjust breakpoints as needed) */
+@media (max-width: 768px) {
+    .chart-container {
+        width: 95%; /* Take up more space on small screens */
+    }
+    .chart-container canvas {
+        height: 300px !important; /* Set a fixed height for small screens */
+    }
 }

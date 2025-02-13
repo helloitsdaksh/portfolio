@@ -19,10 +19,6 @@
 <div class="about-container">
     <!-- About Me Text -->
     <div class="about-text">
-        <div class="chart-container">
-            <canvas id="myChart"></canvas>
-        </div>
-
         <p align="justify">
 
             Hello, I’m Daksh Patel, a passionate Data Scientist and AI Engineer
@@ -34,6 +30,9 @@
             enjoy leveraging these skills to tackle complex challenges and drive
             impactful results.
         </p>
+         <div class="chart-container">
+            <canvas id="myChart"></canvas>
+        </div>
     </div>
 </div>
 
@@ -181,7 +180,8 @@
                       angleLines: { color: 'rgba(100, 100, 100, 0.2)' },
                       pointLabels: {
                           font: { size: 12, weight: 'bold' },
-                          color: 'rgba(38,70,83,0.84)'
+                          color: 'rgba(38,70,83,0.84)',
+                          wrap: true
                       }
                   }
               }
