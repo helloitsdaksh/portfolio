@@ -94,78 +94,167 @@
 </div>
 
 <script>
-    const data = {
-        labels: ["ML Ops", "Deployment", "Data Pipeline", "Database", "Data Viz",
-            "Storytelling", "Business Intelligence", "Experimentation", "Statistics", "ML Modelling"],
-        datasets: [{
-            label: " Skills",
-            data: [5, 4, 5, 4, 5, 5, 3, 4, 5, 5],
-            backgroundColor: 'rgba(42,157,143,0.25)', // Bright Coral Red Fill
-            borderColor: 'rgb(42,157,143)', // Deep Coral Red Border
-            borderWidth: 2,
-            pointBackgroundColor: 'rgb(42,157,143)', // Bright Yellow Data Points
-            pointHoverBackgroundColor: 'rgba(54, 162, 235, 1)', // Blue Highlight on Hover
-            pointRadius: 2,
-            pointHoverRadius: 8
-        }]
-    };
+                    const data = {
+          labels: [
+              // **Layer 1: Core ML & Data Science**
+              "ML Ops", "Deployment", "Data Pipeline", "Database", "Data Viz",
+              "Storytelling", "Business Intelligence", "Research", "Statistics", "ML Modelling",
 
-    const config = {
-        type: 'radar',
-        data: data,
-        options: {
-            responsive: true,
-            maintainAspectRatio: false,
-            animation: {
-                duration: 1000,
-                easing: 'easeInOutBounce' // Smooth animation effect
-            },
-            hover: { mode: 'nearest' },
-            plugins: {
-                legend: {
-                    display: false,
-                },
-                tooltip: {
-                    enabled: true,
-                    backgroundColor: 'rgba(0, 0, 0, 0.7)', // Dark Tooltip Background
-                    titleFont: {
-                        size: 14,
-                        weight: 'bold',
-                        color: '#ffffff' // White Tooltip Title
-                    },
-                    bodyFont: {
-                        size: 12,
-                        weight: 'bold',
-                        color: '#ffffff' // White Tooltip Text
-                    }
-                }
-            },
-            scales: {
-                r: {
-                    beginAtZero: true,
-                    suggestedMax: 5,
-                    ticks: {
-                        stepSize: 1,
-                        showLabelBackdrop: false,
-                        display: false
-                    },
-                    grid: {
-                        color: 'rgba(100, 100, 100, 0.2)' // Subtle Grid
-                    },
-                    angleLines: {
-                        color: 'rgba(100,100,100,0.2)' // Soft Blue Angle Lines
-                    },
-                    pointLabels: {
-                        font: {
-                            size: 12,
-                            weight: 'bold'
-                        },
-                        color: 'rgba(38,70,83,0.84)' // Black Labels for Maximum Contrast
-                    }
-                }
-            }
-        }
-    };
+              // **Layer 2: Advanced ML Techniques**
+              "Feature Engineering", "Model Interpretability", "Deep Learning", "Generative AI",
+              "Foundation Models", "Reinforcement Learning", "Time Series Analysis",
+
+              // **Layer 3: Engineering & Infrastructure**
+              "Data Engineering", "Cloud Computing", "Scalability", "Distributed Systems",
+
+              // **Layer 4: Research & Optimization**
+              "Optimization", "Experimentation", "Model Evaluation"
+          ],
+          datasets: [
+              {
+                  label: "Core ML & Data Science",
+                  data: [5, 4, 5, 4, 5, 5, 4, 5, 5, 5, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null],
+                  backgroundColor: 'rgba(54, 162, 235, 0.2)', // Light Blue
+                  borderColor: 'rgba(54, 162, 235, 1)', // Dark Blue Border
+                  borderWidth: 2,
+                  pointBackgroundColor: 'rgba(54, 162, 235, 1)', // Blue Points
+                  pointRadius: 5,
+              },
+              {
+                  label: "Advanced ML Techniques",
+                  data: [null, null, null, null, null, null, null, null, null, null, 5, 5, 5, 5, 5, 4, 5, null, null, null, null, null, null, null, null, null],
+                  backgroundColor: 'rgba(255, 99, 132, 0.2)', // Light Red
+                  borderColor: 'rgba(255, 99, 132, 1)', // Dark Red Border
+                  borderWidth: 2,
+                  pointBackgroundColor: 'rgba(255, 99, 132, 1)', // Red Points
+                  pointRadius: 5,
+              },
+              {
+                  label: "Engineering & Infrastructure",
+                  data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 5, 4, 5, 5, null, null, null, null, null],
+                  backgroundColor: 'rgba(255, 206, 86, 0.2)', // Light Yellow
+                  borderColor: 'rgba(255, 206, 86, 1)', // Dark Yellow Border
+                  borderWidth: 2,
+                  pointBackgroundColor: 'rgba(255, 206, 86, 1)', // Yellow Points
+                  pointRadius: 5,
+              },
+              {
+                  label: "Research & Optimization",
+                  data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 5, 4, 5],
+                  backgroundColor: 'rgba(75, 192, 192, 0.2)', // Light Teal
+                  borderColor: 'rgba(75, 192, 192, 1)', // Dark Teal Border
+                  borderWidth: 2,
+                  pointBackgroundColor: 'rgba(75, 192, 192, 1)', // Teal Points
+                  pointRadius: 5,
+              }
+          ]
+      };
+
+      const config = {
+          type: 'radar',
+          data: data,
+          options: {
+              responsive: true,
+              maintainAspectRatio: true,
+              plugins: {
+                  legend: {
+                      display: true,
+                      position: 'bottom',
+                  },
+                  tooltip: {
+                      enabled: true,
+                      backgroundColor: 'rgba(0, 0, 0, 0.7)',
+                      titleFont: { size: 14, weight: 'bold', color: '#ffffff' },
+                      bodyFont: { size: 12, weight: 'bold', color: '#ffffff' }
+                  }
+              },
+              scales: {
+                  r: {
+                      beginAtZero: true,
+                      suggestedMax: 5,
+                      ticks: { stepSize: 1, showLabelBackdrop: false, display: false },
+                      grid: { color: 'rgba(200, 200, 200, 0.3)' },
+                      angleLines: { color: 'rgba(100, 100, 100, 0.2)' },
+                      pointLabels: {
+                          font: { size: 12, weight: 'bold' },
+                          color: 'rgba(38,70,83,0.84)'
+                      }
+                  }
+              }
+          }
+      };
+    // const data = {
+    //     labels: ["ML Ops", "Deployment", "Data Pipeline", "Database", "Data Viz",
+    //         "Storytelling", "Business Intelligence", "Research", "Statistics", "ML Modelling"],
+    //     datasets: [{
+    //         label: " Skills",
+    //         data: [5, 4, 5, 4, 5, 5, 3, 4, 5, 5],
+    //         backgroundColor: 'rgba(42,157,143,0.25)', // Bright Coral Red Fill
+    //         borderColor: 'rgb(42,157,143)', // Deep Coral Red Border
+    //         borderWidth: 2,
+    //         pointBackgroundColor: 'rgb(42,157,143)', // Bright Yellow Data Points
+    //         pointHoverBackgroundColor: 'rgba(54, 162, 235, 1)', // Blue Highlight on Hover
+    //         pointRadius: 2,
+    //         pointHoverRadius: 8
+    //     }]
+    // };
+    //
+    // const config = {
+    //     type: 'radar',
+    //     data: data,
+    //     options: {
+    //         responsive: true,
+    //         maintainAspectRatio: false,
+    //         animation: {
+    //             duration: 1000,
+    //             easing: 'easeInOutBounce' // Smooth animation effect
+    //         },
+    //         hover: { mode: 'nearest' },
+    //         plugins: {
+    //             legend: {
+    //                 display: false,
+    //             },
+    //             tooltip: {
+    //                 enabled: true,
+    //                 backgroundColor: 'rgba(0, 0, 0, 0.7)', // Dark Tooltip Background
+    //                 titleFont: {
+    //                     size: 14,
+    //                     weight: 'bold',
+    //                     color: '#ffffff' // White Tooltip Title
+    //                 },
+    //                 bodyFont: {
+    //                     size: 12,
+    //                     weight: 'bold',
+    //                     color: '#ffffff' // White Tooltip Text
+    //                 }
+    //             }
+    //         },
+    //         scales: {
+    //             r: {
+    //                 beginAtZero: true,
+    //                 suggestedMax: 5,
+    //                 ticks: {
+    //                     stepSize: 1,
+    //                     showLabelBackdrop: false,
+    //                     display: false
+    //                 },
+    //                 grid: {
+    //                     color: 'rgba(100, 100, 100, 0.2)' // Subtle Grid
+    //                 },
+    //                 angleLines: {
+    //                     color: 'rgba(100,100,100,0.2)' // Soft Blue Angle Lines
+    //                 },
+    //                 pointLabels: {
+    //                     font: {
+    //                         size: 12,
+    //                         weight: 'bold'
+    //                     },
+    //                     color: 'rgba(38,70,83,0.84)' // Black Labels for Maximum Contrast
+    //                 }
+    //             }
+    //         }
+    //     }
+    // };
 
     const ctx = document.getElementById('myChart').getContext('2d');
     new Chart(ctx, config);
